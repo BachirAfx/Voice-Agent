@@ -1,0 +1,60 @@
+.voxa-sessions {
+  padding: 0;
+  width: 100%;
+}
+
+.voxa-sessions__header {
+  margin-bottom: 24px;
+}
+
+.voxa-sessions__title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--ink-primary);
+  margin-bottom: 8px;
+}
+
+.voxa-sessions__filters {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.voxa-sessions__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.voxa-session-card {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  background-color: var(--bg-surface);
+  border: var(--border-width-standard) solid var(--ink-border);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.1s ease;
+}
+
+.voxa-session-card:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-md);
+}
+
+.voxa-session-card__info h4 {
+  margin: 0 0 4px 0;
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: var(--ink-primary);
+}
+
+.voxa-session-card__info p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--ink-muted);
+}
